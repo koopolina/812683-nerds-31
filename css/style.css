@@ -1,0 +1,128 @@
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #231f20;
+  --basic-dark: #283136;
+  --basic-neutral: #4d4d4d;
+  --basic-light: #e1e1e1;
+  --basic-extra-light: #eeeeee;
+  --basic-white: #ffffff;
+
+  --special: #Fb565a;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--special);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus  {
+  color: var(--basic-light)
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.slider {
+  background-color: var(--basic-extra-light);
+  color: var(--basic-black);
+}
+
+.slider h2 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--special);
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about h3 {
+  font-weight: 700;
+}
+
+.illustration {
+  text-align: right;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.stats-list {
+  list-style: none;
+}
+
+.stats-item {
+  text-align: right;
+  line-height: 18px;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
