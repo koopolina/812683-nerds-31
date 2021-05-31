@@ -18,8 +18,11 @@
   --yellow-focus: #e5a722;
   --basic-border: #d7dcde;
   --border-hover: #b4b9bb;
+  --grey-hover: #dfdfdf;
+  --grey-focus: #d5d5d5;
+  --grey-border: #dbdbdb;
 
-  --special: #Fb565a;
+  --special: #fb565a;
 }
 
 body {
@@ -95,13 +98,8 @@ body {
   border-radius: 3px;
 }
 
-.button:hover {
-  border-radius: 3px;
-}
-
 .button:focus {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  border-radius: 3px;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -206,6 +204,161 @@ body {
   line-height: 18px;
 }
 
+.main-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-align: center;
+  background-color: var(--basic-extra-light);
+}
+
+.filter p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.price-item {
+  list-style: none;
+  line-height: 22px;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input-radio:focus + label,
+.filter-input-checkbox:focus + label {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.button-grey {
+  background-color: var(--basic-extra-light);
+  color: var(--basic-black);
+}
+
+.button-grey:hover {
+  background-color: var(--grey-hover);
+}
+
+.button-grey:focus {
+  background-color: var(--grey-focus);
+  color: rgba(1, 1, 1, 0.3);
+}
+
+.sort {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sort-item {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.sort-item:hover {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.sort-item:focus {
+  color: var(--basic-black);
+}
+
+.sort-item-current,
+.sort-item-current:hover,
+.sort-item-current:focus,
+.sort-item-current:active {
+  color: var(--basic-black);
+}
+
+.pattern-list {
+  list-style: none;
+}
+
+.pattern-list h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pattern-list a {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.pattern-list a:hover {
+  color: var(--special);
+}
+
+.pattern-list a:focus {
+  color: rgba(1, 1, 1, 0.3);
+}
+
+.pattern-item p {
+  color: var(--basic-grey);
+  line-height: 18px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  line-height: 18px;
+  font-weight: 500;
+  background-color: var(--basic-extra-light);
+  border-radius: 3px;
+}
+
+.pagination-item a:hover {
+  color: var(--basic-black);
+  background-color: var(--grey-hover);
+}
+
+.pagination-item a:focus {
+  color: rgba(1, 1, 1, 0.3);
+  background-color: var(--grey-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--grey-border);
+  border-radius: 3px;
+}
+
 .footer-social h2 {
   font-size: 36px;
   line-height: 36px;
@@ -266,3 +419,4 @@ body {
   border: 2px solid var(--pink-hover);
   border-radius: 3px;
 }
+
