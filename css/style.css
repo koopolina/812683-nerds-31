@@ -73,6 +73,7 @@ body {
 }
 
 .slider h2 {
+  color: var(--basic-black);
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -91,6 +92,7 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: var(--special);
+  border-radius: 3px;
 }
 
 .button:hover {
@@ -100,6 +102,7 @@ body {
 .button:focus {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-pink:hover {
@@ -133,6 +136,7 @@ body {
 .button-yellow:focus {
   background-color: var(--yellow-focus);
 }
+
 .services-list {
   list-style: none;
 }
@@ -144,11 +148,13 @@ body {
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
 .about h2 {
+  color: var(--basic-black);
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -173,11 +179,19 @@ body {
   line-height: 18px;
 }
 
-.percent {
+.number {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
+}
+
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--basic-black);
+  vertical-align: super;
 }
 
 .contacts h2 {
@@ -189,11 +203,12 @@ body {
 
 .contacts p {
   color: var(--basic-grey);
+  line-height: 18px;
 }
 
 .footer-social h2 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 700;
   color: var(--basic-black);
   text-align: center;
@@ -217,6 +232,7 @@ body {
 .modal h2 {
   font-size: 45px;
   line-height: 52,73px;
+  font-weight: 700;
   color: var(--basic-black);
 }
 
