@@ -51,13 +51,13 @@ body {
 }
 
 .container {
-  width: 960px;
-  padding: 0 140px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .main-header-bar {
  background-color: var(--basic-extra-light);
- padding: 0 140px;
 }
 
 .main-navigation {
@@ -69,6 +69,9 @@ body {
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .site-navigation {
@@ -97,7 +100,9 @@ body {
 .slider {
   background-color: var(--basic-extra-light);
   color: var(--basic-black);
-  margin-bottom: 80px;
+  width: 940px;
+  margin: 0px auto 80px auto;
+  padding: 0 10px;
 }
 
 .slider h2 {
@@ -261,7 +266,12 @@ body {
 .clients-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 120px;
+  column-gap: 63px;
+}
+
+.contacts img {
+  width: 100%;
+  height: auto;
 }
 
 .contacts h2 {
@@ -431,9 +441,9 @@ body {
   border-radius: 3px;
 }
 
-.main-footer {
+/* .main-footer {
   padding: 68px 0;
-}
+} */
 
 .footer-social h2 {
   font-size: 36px;
