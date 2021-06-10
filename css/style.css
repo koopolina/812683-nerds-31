@@ -26,7 +26,7 @@
 }
 
 body {
-  min-width: 960px;
+  min-width: 1140px;
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -51,25 +51,33 @@ body {
 }
 
 .container {
-  width: 940px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 80px;
 }
 
 .main-header-bar {
  background-color: var(--basic-extra-light);
 }
 
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-  width: 960px;
+  width: 1160px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -100,8 +108,8 @@ body {
 .slider {
   background-color: var(--basic-extra-light);
   color: var(--basic-black);
-  width: 940px;
-  margin: 0px auto 80px auto;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -110,12 +118,41 @@ body {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  width: 538px;
+  height: 111px;
+}
+
+.slider p {
+  margin: 0;
+  padding: 0;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 49px;
+  width: 400px;
+}
+
+.slider .button {
+  width: 240px;
+  height: 50px;
 }
 
 .slider-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.slider-item {
+  display: grid;
+  grid-template-columns: 394px 1fr;
+  grid-template-rows: 226px 75px 130px;
+}
+
+.slider-item img {
+  width: 760px;
+  height: 431px;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .page-catalog {
@@ -178,7 +215,7 @@ body {
 }
 
 .services {
-  margin-bottom: 80px;
+  margin-bottom: 121px;
 }
 
 .services-list {
@@ -190,26 +227,43 @@ body {
   list-style: none;
 }
 
-.services-item {
-  text-align: center;
-}
-
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.services-item img {
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
 }
 
 .services-item p {
-  margin: 0 10px;
+  margin-left: 0;
+  margin-bottom: 32px;
+}
+
+.services-item .button {
+  width: 160px;
+  height: 50px;
 }
 
 .index-columns {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 30%;
   margin-bottom: 73px;
+  gap: 60px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about h2 {
@@ -217,37 +271,67 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-}
-
-.about {
-  padding: 73px 0;
-}
-
-.illustration {
-  padding: 39px 0;
+  margin: 0;
+  margin-bottom: 32px;
+  margin-top: 34px;
+  width: 651px;
 }
 
 .about h3 {
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.about p {
+  margin-bottom: 40px;
+  width: 646px;
 }
 
 .about-item {
   list-style: none;
+  margin-bottom: 37px;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
 }
 
 .illustration {
-  text-align: right;
-  font-weight: 700;
+  margin-bottom: 31px;
+}
+
+.illustration img {
+  width: 360px;
+  height: 208px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.stats figcaption {
   color: var(--basic-black);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 360px;
 }
 
 .stats-list {
+  display: flex;
   list-style: none;
 }
 
 .stats-item {
-  text-align: right;
   line-height: 18px;
+}
+
+.stats-item p {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 11px;
+  width: 119px;
 }
 
 .number {
@@ -255,6 +339,7 @@ body {
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
+  width: 78px;
 }
 
 .percent {
@@ -263,6 +348,7 @@ body {
   font-weight: 700;
   color: var(--basic-black);
   vertical-align: super;
+  width: 20px;
 }
 
 .clients {
@@ -294,6 +380,11 @@ body {
 .contacts p {
   color: var(--basic-grey);
   line-height: 18px;
+}
+
+.contacts .button {
+  width: 219px;
+  height: 50px;
 }
 
 .main-header h1 {
@@ -451,10 +542,6 @@ body {
   border-radius: 3px;
 }
 
-/* .main-footer {
-  padding: 68px 0;
-} */
-
 .footer-social h2 {
   font-size: 36px;
   line-height: 36px;
@@ -483,6 +570,13 @@ body {
   line-height: 52,73px;
   font-weight: 700;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.modal .button-pink{
+  width: 259px;
+  height: 50px;
 }
 
 .text-form {
@@ -490,6 +584,11 @@ body {
   color: var(--basic-black);
   line-height: 18px;
   font-weight: 700;
+}
+
+.text-form p {
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .text-form input[type="text"],
