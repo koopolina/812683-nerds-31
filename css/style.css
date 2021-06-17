@@ -547,6 +547,18 @@ body {
   padding-top: 62px;
 }
 
+.clients a {
+  opacity: 20%;
+}
+
+.clients a:hover {
+  opacity: 100%;
+}
+
+.clients a:focus {
+  opacity: 10%;
+}
+
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -741,6 +753,18 @@ body {
   text-transform: uppercase;
   text-align: left;
   list-style: none;
+}
+
+.sort-item li {
+  position: relative;
+}
+
+.sort-item li::afetr {
+  content: "838383";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
 }
 
 .pattern-list {
