@@ -24,7 +24,7 @@
         <li><a class="link" href="">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-      <a class="link" href="">Корзина</a>
+      <a class="basket-link" href="">Корзина</a>
       </div>
     </nav>
     <h1>Магазин готовых шаблонов</h1>
@@ -34,56 +34,72 @@
     <div class="page-catalog container">
     <section class="filter">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <p>Стоимость:</p>
-      <ul class="price-list">
-        <li class="price-item">От</li>
-        <li class="price-item">До</li>
-      </ul>
-      <form method="get" action="https://echo.htmlacademy.ru/">
+
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend class="filter-one">Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="15000">
+            </label>
+          </div>
+        </div>
+      </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="filter-two">Сетка:</legend>
           <ul>
             <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-      </form>
       <fieldset>
-        <legend>Особенности:</legend>
+        <legend class="filter-three">Особенности:</legend>
         <ul>
           <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="benefit" id="filter-benefit">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="benefit" id="filter-benefit">
             <label for="filter-benefit">Блок преимуществ</label>
           </li>
           <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
           <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
           <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
       </fieldset>
       <button class="button button-grey" type="submit">Показать</button>
+      </form>
     </section>
     <section class="pattern">
       <h2 class="visually-hidden">Список шаблонов</h2>
@@ -92,40 +108,56 @@
         <li class="sort-item sort-item-current">По цене</li>
         <li class="sort-item">По типу</li>
         <li class="sort-item">По названию</li>
+        <li class="sort-item down">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#231F20"/>
+            </svg>
+        </li>
+        <li class="sort-item up">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+            </svg>
+        </li>
       </ul>
       <ul class="pattern-list">
-        <li class="pattern-item">
+        <li class="pattern-item pattern-item-current">
           <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Седона">
           <a class="link" href="">
-            <h3>Sedona</h3>
-          </a>
-          <p>Информационный сайт<br> для туристов</p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+            <div class="popup">
+              <h3>Sedona</h3>
+            </a>
+            <p>Информационный сайт<br> для туристов</p>
+            <button class="button button-pink" type="submit">9 900 ₽</button>
+          </div>
         </li>
         <li class="pattern-item">
           <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Пинк">
           <a class="link" href="">
-            <h3>Pink App</h3>
-          </a>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+            <div class="popup">
+              <h3>Pink App</h3>
+            </a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button class="button button-pink" type="submit">9 900 ₽</button>
+          </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Бородинский">
+          <img src="img/catalog/img-barbershop.jpg" width="359" height="578" alt="Бородинский">
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Мишка">
+          <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="Мишка">
         </li>
-        <li class="pattern-item">
-          <img src="img/catalog/img-aplus.jpg" width="358" height="578" alt="А+">
+        <li class="pattern-item pattern-item-last-child">
+          <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="А+">
         </li>
-        <li class="pattern-item">
-          <img src="img/catalog/img-kvast.jpg" width="358" height="578" alt="Кваст">
+        <li class="pattern-item pattern-item-last-child">
+          <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="Кваст">
           <a class="link" href="">
+            <div class="popup">
             <h3>Кваст</h3>
           </a>
           <p>Промо-сайт производителя крафтового кваса</p>
           <button class="button button-pink" type="submit">9 900 ₽</button>
+        </div>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -138,7 +170,7 @@
         <li class="pagination-item">
           <a class="link" href="">3</a>
         </li>
-        <li class="pagination-item">
+        <li class="pagination-item last-page">
           <a class="link" href="">Следующая</a>
         </li>
       </ul>
