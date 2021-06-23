@@ -1044,17 +1044,17 @@ body {
   margin-right: 0;
 }
 
-.pattern-item-current,
+/* .pattern-item-current,
 .pattern-item-current:active {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
+} */
 
-.pattern-item-current::before,
+/* .pattern-item-current::before,
 .pattern-item-current:hover::before {
   opacity: 100%;
-}
+} */
 
 .popup h3 {
   text-align: center;
@@ -1102,10 +1102,22 @@ body {
   height: 231px;
   position: absolute;
   background-color: var(--basic-extra-light);
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  opacity: 0%;
+}
+.pattern-item:hover .popup {
+  width: 359px;
+  height: 231px;
+  position: absolute;
+  background-color: var(--basic-extra-light);
+  bottom: 0px;
+  left: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  opacity: 100%;
 }
 
 .pagination-list {
