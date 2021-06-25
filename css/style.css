@@ -71,6 +71,10 @@ body {
   padding: 0 10px;
 }
 
+.container-map {
+  width: 1440px;
+}
+
 .main-header {
   margin-bottom: 80px;
 }
@@ -910,7 +914,7 @@ body {
   opacity: 30%;
   text-transform: uppercase;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 8px;
   margin-right: 23px;
 }
 
@@ -1107,6 +1111,7 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   opacity: 0%;
+  transition: all .5s;
 }
 .pattern-item:hover .popup {
   width: 359px;
