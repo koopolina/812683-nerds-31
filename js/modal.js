@@ -31,7 +31,7 @@ modalButton.addEventListener("click", function (evt) {
     modalMail.value = storageMail;
     modalText.focus();
   } else {
-    modalMail.focus();
+    modalName.focus();
   }
 
 });
