@@ -6,7 +6,8 @@
   <title>Каталог дизайн-студии Нёрдс</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -51,7 +52,7 @@
               от <input type="number" name="min-price" value="0">
             </label>
             <label class="max-price">
-              до <input type="number" name="max-price" value="15000">
+              до <input type="text" name="max-price" placeholder="15 000">
             </label>
           </div>
         </div>
@@ -121,9 +122,9 @@
       </ul>
       <ul class="pattern-list">
         <li class="pattern-item">
-          <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="">
+          <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Седона">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>Sedona</h3>
             </a>
             <p>Информационный сайт<br> для туристов</p>
@@ -131,9 +132,9 @@
           </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="">
+          <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Пинк">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>Pink App</h3>
             </a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -141,9 +142,9 @@
           </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-barbershop.jpg" width="359" height="578" alt="">
+          <img src="img/catalog/img-barbershop.jpg" width="359" height="578" alt="Барбершоп">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>Barbershop</h3>
           </a>
           <p>Сайт салона красоты. Для мужчин, да. </p>
@@ -151,9 +152,9 @@
           </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="">
+          <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="Мишка">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>Mishka</h3>
           </a>
           <p>Интернет-магазин вязаных игрушек</p>
@@ -161,9 +162,9 @@
             </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="">
+          <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="А+">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>A Plus</h3>
           </a>
           <p>Лендинг курсов повышения квалификации</p>
@@ -171,9 +172,9 @@
             </div>
         </li>
         <li class="pattern-item">
-          <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="">
+          <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="Кваст">
+          <div class="popup">
           <a class="link" href="">
-            <div class="popup">
               <h3>Кваст</h3>
           </a>
           <p>Промо-сайт производителя крафтового кваса</p>
@@ -198,24 +199,21 @@
     </section>
     </div>
     <div class="container-map">
-      <section class="contacts">
       <div class="map">
-        <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.315850%2C59.970705&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=14.76" style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeQIeVLC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Add72678f3f4517adc76c5b3bfcf9f883eb5f2d3afdee16446bca8952f493772e&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe> -->
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ac697f67bdf2b17e17320f080223ac059835d41396be4ce560c8e9c1e5285b7&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-        <!-- <img src="img/map.jpg" width="1440" height="416" alt="Карта"> -->
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ac697f67bdf2b17e17320f080223ac059835d41396be4ce560c8e9c1e5285b7&amp;source=constructor"></iframe>
+        <section class="contacts">
+          <div class="map-marker">
+            <img src="img/map-marker.png" width="231" height="190" alt="Метка на карте">
+          </div>
+          <div class="address">
+            <h2>NЁRDS DESIGN STUDIO</h2>
+            <p>наб. Реки Карповки,<br>
+              5 лит П, Санкт-Петербург</p>
+            <p><a class="link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a></p>
+            <button class="button button-pink modal-button" type="button">Напишите нам</button>
+          </div>
+        </section>
       </div>
-      <div class="map-marker">
-        <img src="img/map-marker.png" width="231" height="190">
-      </div>
-      <div class="address">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>наб. Реки Карповки,<br>
-          5 лит П, Санкт-Петербург</p>
-        <p>+7 800 555-86-28</p>
-        <button class="button button-pink modal-button" type="button">Напишите нам</button>
-      </div>
-      </section>
     </div>
     </main>
     <footer class="main-footer">
@@ -268,7 +266,7 @@
         </p>
         <p class="text-item text">
           <label for="appointment-text">Текст письма:</label>
-          <input class="text-text" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+          <textarea class="text-text" id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-pink" type="submit">Отправить</button>
       </form>
@@ -282,7 +280,7 @@
     </div>
     </section>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
 
 </body>
 </html>
