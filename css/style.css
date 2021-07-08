@@ -1359,7 +1359,7 @@ body {
 }
 
 .modal .button-pink{
-  width: 264px;
+  width: 260px;
   height: 51px;
   font-style: inherit;
 }
@@ -1450,7 +1450,7 @@ body {
 .text-form textarea {
   width: 740px;
   height: 111px;
-  padding: 16px;
+  padding-left: 16px;
   border: 2px solid var(--basic-border);
   border-radius: 3px;
   margin-bottom: 26px;
