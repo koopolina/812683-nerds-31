@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
   --basic-black: #000000;
   --basic-extra-dark: #231f20;
@@ -44,6 +51,7 @@ body {
 
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -60,7 +68,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -115,6 +124,7 @@ body {
 
 .main-navigation {
   display: grid;
+  grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
   grid-template-columns: min-content 1fr min-content;
   width: 1160px;
   line-height: 30px;
@@ -206,6 +216,7 @@ body {
   height: 111px;
   margin-top: 78px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .slider p {
@@ -235,6 +246,10 @@ body {
   grid-template-rows: 213px 87px 130px;
 }
 
+.slider-item p {
+  overflow: hidden;
+}
+
 .slide {
   display: none;
 }
@@ -248,7 +263,8 @@ body {
   height: 431px;
   grid-row-start: 1;
   grid-row-end: 4;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-extra-light);
 }
 
@@ -313,6 +329,7 @@ body {
   line-height: 18px;
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
+  overflow: hidden;
 }
 
 .button:focus,
@@ -394,7 +411,8 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 19px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .services-item p {
@@ -402,6 +420,7 @@ body {
   margin-bottom: 32px;
   width: 260px;
   height: 48px;
+  overflow: hidden;
 }
 
 .services-item .button {
@@ -431,6 +450,7 @@ body {
   margin-bottom: 17px;
   margin-top: 35px;
   width: 651px;
+  overflow: hidden;
 }
 
 .about h3 {
@@ -482,7 +502,8 @@ body {
   height: 208px;
   margin: 0;
   margin-bottom: 30px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .stats figcaption {
@@ -674,6 +695,7 @@ body {
   color: var(--basic-black);
   text-align: center;
   background-color: var(--basic-extra-light);
+  overflow: hidden;
 }
 
 .range-filter {
@@ -790,6 +812,14 @@ body {
   padding-right: 13px;
 }
 
+.max-price input::-webkit-input-placeholder {
+  color: var(--basic-dark);
+}
+
+.max-price input::-moz-placeholder {
+  color: var(--basic-dark);
+}
+
 .max-price input::placeholder {
   color: var(--basic-dark);
 }
@@ -821,7 +851,9 @@ body {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .filter-input-radio + label::before {
@@ -1089,6 +1121,7 @@ body {
   line-height: 30px;
   font-size: 18px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .popup p {
@@ -1101,13 +1134,15 @@ body {
   padding-left: 51px;
   color: var(--basic-grey);
   line-height: 18px;
+  overflow: hidden;
 }
 
 .pattern-item img {
   width: 359px;
   height: 578px;
   margin: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -1179,6 +1214,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .pagination-item a:hover {
@@ -1283,11 +1319,13 @@ body {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal h2 {
@@ -1333,7 +1371,8 @@ body {
   font-weight: 700;
   display: grid;
   grid-template-columns: 360px 1fr;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   margin-left: 100px;
 }
 
@@ -1356,6 +1395,22 @@ body {
   width: 740px;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.text-item input::-webkit-input-placeholder {
+  color: var(--basic-dark-grey);
+  line-height: 18px;
+  opacity: 0.5;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.text-item input::-moz-placeholder {
+  color: var(--basic-dark-grey);
+  line-height: 18px;
+  opacity: 0.5;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .text-item input::placeholder {
@@ -1392,14 +1447,16 @@ body {
   color: var(--pink-hover);
 }
 
-.text-text {
+.text-form textarea {
   width: 740px;
   height: 111px;
-  padding-left: 16px;
+  padding: 16px;
   border: 2px solid var(--basic-border);
   border-radius: 3px;
   margin-bottom: 26px;
   resize: none;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .text-text:hover {
@@ -1418,6 +1475,26 @@ body {
   color: var(--pink-hover);
 }
 
+.text-text::-webkit-input-placeholder {
+  color: var(--basic-dark-grey);
+  line-height: 18px;
+  opacity: 0.5;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  padding-bottom: 35px;
+  padding-top: 12px;
+}
+
+.text-text::-moz-placeholder {
+  color: var(--basic-dark-grey);
+  line-height: 18px;
+  opacity: 0.5;
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  padding-bottom: 35px;
+  padding-top: 12px;
+}
+
 .text-text::placeholder {
   color: var(--basic-dark-grey);
   line-height: 18px;
@@ -1426,6 +1503,24 @@ body {
   font-family: Roboto, Arial, sans-serif;
   padding-bottom: 35px;
   padding-top: 12px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
@@ -1443,6 +1538,28 @@ body {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
