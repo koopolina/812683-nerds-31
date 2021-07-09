@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 2 version,not dead,not ie <= 11
-*/
-
 :root {
   --basic-black: #000000;
   --basic-extra-dark: #231f20;
@@ -683,9 +676,20 @@ body {
 
 .contacts .button {
   width: 219px;
-  height: 50px;
+  height: 35px;
   margin-left: 50px;
   margin-top: 18px;
+}
+
+.contacts a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  padding-top: 16px;
+
 }
 
 .main-header h1 {
@@ -1449,8 +1453,9 @@ body {
 
 .text-form textarea {
   width: 740px;
-  height: 111px;
+  height: 98px;
   padding-left: 16px;
+  padding-top: 15px;
   border: 2px solid var(--basic-border);
   border-radius: 3px;
   margin-bottom: 26px;
@@ -1482,7 +1487,6 @@ body {
   font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
   padding-bottom: 35px;
-  padding-top: 12px;
 }
 
 .text-text::-moz-placeholder {
@@ -1492,7 +1496,6 @@ body {
   font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
   padding-bottom: 35px;
-  padding-top: 12px;
 }
 
 .text-text::placeholder {
@@ -1502,7 +1505,6 @@ body {
   font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
   padding-bottom: 35px;
-  padding-top: 12px;
 }
 
 @-webkit-keyframes bounce {
