@@ -52,7 +52,7 @@
               от <input type="number" name="min-price" value="0">
             </label>
             <label class="max-price">
-              до <input type="text" name="max-price" placeholder="15 000">
+              до <input type="text" name="max-price" placeholder="150 000">
             </label>
           </div>
         </div>
@@ -104,22 +104,32 @@
     </section>
     <section class="pattern">
       <h2 class="visually-hidden">Список шаблонов</h2>
-      <ul class="sort-list">
-        <li>Сортировать:</li>
-        <li class="sort-item sort-item-current">По цене</li>
-        <li class="sort-item">По типу</li>
-        <li class="sort-item">По названию</li>
-        <li class="sort-item down">
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 10L0 0H11" fill="#231F20"/>
+      <div class="sort">
+        <h3>Сортировать:</h3>
+        <ul class="sort-list">
+          <li><a class="sort-item sort-item-current">По цене</a></li>
+          <li><a class="sort-item">По типу</a></li>
+          <li><a class="sort-item">По названию</a></li>
+      </ul>
+        <ul class="sort-priority">
+          <li class="down">
+            <a href="">
+            <span class="visually-hidden"По возрастанию></span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
             </svg>
-        </li>
-        <li class="sort-item up">
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </a>
+          </li>
+          <li class="up">
+          <a href="">
+            <span class="visually-hidden"По убыванию></span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
             </svg>
-        </li>
+          </a>
+          </li>
       </ul>
+    </div>
       <ul class="pattern-list">
         <li class="pattern-item">
           <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Седона">
@@ -128,7 +138,7 @@
               <h3>Sedona</h3>
             </a>
             <p>Информационный сайт<br> для туристов</p>
-            <button class="button button-pink" type="submit">9 900 ₽</button>
+            <button class="button button-pink" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="pattern-item">
@@ -138,7 +148,7 @@
               <h3>Pink App</h3>
             </a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="button button-pink" type="submit">9 900 ₽</button>
+            <button class="button button-pink" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="pattern-item">
@@ -148,7 +158,7 @@
               <h3>Barbershop</h3>
           </a>
           <p>Сайт салона красоты. Для мужчин, да. </p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+          <button class="button button-pink" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="pattern-item">
@@ -158,7 +168,7 @@
               <h3>Mishka</h3>
           </a>
           <p>Интернет-магазин вязаных игрушек</p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+          <button class="button button-pink" type="button">9 900 ₽</button>
             </div>
         </li>
         <li class="pattern-item">
@@ -168,7 +178,7 @@
               <h3>A Plus</h3>
           </a>
           <p>Лендинг курсов повышения квалификации</p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+          <button class="button button-pink" type="button">9 900 ₽</button>
             </div>
         </li>
         <li class="pattern-item">
@@ -178,7 +188,7 @@
               <h3>Кваст</h3>
           </a>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <button class="button button-pink" type="submit">9 900 ₽</button>
+          <button class="button button-pink" type="button">9 900 ₽</button>
             </div>
         </li>
       </ul>
@@ -209,7 +219,7 @@
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>наб. Реки Карповки,<br>
               5 лит П, Санкт-Петербург</p>
-            <p><a class="link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+            <p class="phone"><a class="link" href="tel:+78005558628">+7 800 555-86-28</a></p>
             <a href="" class="button button-pink modal-button">Напишите нам</a>
           </div>
         </section>
