@@ -334,8 +334,8 @@ body {
   background-color: var(--pink-hover);
 }
 
-.button-pink:focus
-,.button-pink:active{
+.button-pink:focus,
+.button-pink:active {
   background-color: var(--pink-focus);
 }
 
@@ -723,7 +723,7 @@ body {
   text-transform: uppercase;
 }
 
-.filter-two{
+.filter-two {
   margin-bottom: 16px;
   padding-top: 22px;
   padding-left: 0;
@@ -892,7 +892,7 @@ body {
   opacity: 40%;
 }
 
-.filter-input-radio:checked + label::after{
+.filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -904,7 +904,7 @@ body {
   opacity: 40%;
 }
 
-.filter-input-radio:checked:hover + label::after{
+.filter-input-radio:checked:hover + label::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -1134,7 +1134,7 @@ body {
   opacity: 10%;
 }
 
-.pattern-item:hover{
+.pattern-item:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
