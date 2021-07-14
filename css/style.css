@@ -26,6 +26,10 @@
   --controls-shadow: #cfcfcf;
   --controls-color: #ababab;
   --range-color: #f1f1f1;
+  --basic-black-rgb: 0, 1, 1;
+  --basic-neutral-rgb: 255, 255, 255;
+  --extra-dark-rgb: 1, 1, 1;
+  --extra-black-rgb: 0, 0, 0;
 
 
   --special: #fb565a;
@@ -326,8 +330,8 @@ body {
 
 .button:focus,
 .button:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--basic-black-rgb), 0.1);
+  color: rgba(var(--basic-neutral-rgb), 0.3);
 }
 
 .button-pink:hover {
@@ -978,7 +982,7 @@ body {
 .button-grey:focus,
 .button-grey:active {
   background-color: var(--grey-focus);
-  color: rgba(1, 1, 1, 0.3);
+  color: rgba(var(--extra-dark-rgb), 0.3);
 }
 
 .sort h3 {
@@ -1105,7 +1109,7 @@ body {
 
 .pattern-list a:focus,
 .pattern-list a:active {
-  color: rgba(1, 1, 1, 0.3);
+  color: rgba(var(--extra-dark-rgb), 0.3);
 }
 
 .pattern-item {
@@ -1135,7 +1139,7 @@ body {
 }
 
 .pattern-item:hover {
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 10px rgba(var(--extra-black-rgb), 0.4);
   cursor: pointer;
 }
 
@@ -1259,9 +1263,9 @@ body {
 
 .pagination-item a:focus,
 .pagination-item a:active {
-  color: rgba(1, 1, 1, 0.3);
+  color: rgba(var(--extra-dark-rgb), 0.3);
   background-color: var(--grey-focus);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px rgba(var(--basic-black-rgb), 0.1);
 }
 
 .pagination-item-current a,
@@ -1269,7 +1273,7 @@ body {
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: var(--basic-black);
-  background-color: rgba(0, 0, 0, 0.0001);
+  background-color: rgba(var(--extra-black-rgb), 0.0001);
   border: 3px solid var(--grey-border);
   border-radius: 3px;
 }
@@ -1326,7 +1330,7 @@ body {
 
 .social-button:focus,
 .social-button:active path {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: rgba(var(--basic-neutral-rgb), 0.3);
 }
 
 .footer-social ul {
@@ -1349,7 +1353,7 @@ body {
   width: 960px;
   height: 590px;
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px rgba(var(--extra-black-rgb), 0.4);
 }
 
 .modal-show {
